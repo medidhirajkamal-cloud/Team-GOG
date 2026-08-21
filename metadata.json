@@ -1,0 +1,6 @@
+{
+  "name": "CivicLink",
+  "description": "Citizen Intake, AI-Powered Triage & Municipal Case Management Portal for CityPulse and the Department of Public Works.",
+  "requestFramePermissions": ["geolocation", "microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

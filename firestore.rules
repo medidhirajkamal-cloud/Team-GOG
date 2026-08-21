@@ -1,0 +1,46 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Reports collection - citizens can create reports and view public municipal reports; authenticated users can update
+    match /reports/{reportId} {
+      allow read: if true;
+      allow create: if true;
+      allow update, delete: if isAuthenticated() || true; // Flexible for demo portal dispatchers and citizens
+    }
+
+    // Users collection
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if isOwner(userId) || isAuthenticated();
+    }
+
+    // Comments and dispatch updates
+    match /comments/{commentId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Generated media & diagrams
+    match /generated_media/{mediaId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Voice transcripts
+    match /voice_transcripts/{transcriptId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

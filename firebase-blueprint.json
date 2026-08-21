@@ -1,0 +1,37 @@
+{
+  "entities": {
+    "Report": {
+      "collection": "reports",
+      "fields": {
+        "trackingNumber": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "issueType": { "type": "string" },
+        "issueTypeName": { "type": "string" },
+        "aiConfidence": { "type": "number" },
+        "suggestedDept": { "type": "string" },
+        "actualDept": { "type": "string" },
+        "priority": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "location": { "type": "map" },
+        "evidenceImages": { "type": "array" },
+        "aiGist": { "type": "map" },
+        "coordination": { "type": "map" },
+        "routingLog": { "type": "array" }
+      }
+    },
+    "User": {
+      "collection": "users",
+      "fields": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}
