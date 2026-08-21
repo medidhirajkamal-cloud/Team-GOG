@@ -1,0 +1,76 @@
+{
+  "hash": "f235dd78",
+  "configHash": "6a7cb947",
+  "lockfileHash": "d7a9856a",
+  "browserHash": "234ac7b7",
+  "optimized": {
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "1be4c86b",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "e3d0499d",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "aff85849",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "b4177111",
+      "needsInterop": true
+    },
+    "canvas-confetti": {
+      "src": "../../canvas-confetti/dist/confetti.module.mjs",
+      "file": "canvas-confetti.js",
+      "fileHash": "e8b739df",
+      "needsInterop": false
+    },
+    "leaflet": {
+      "src": "../../leaflet/dist/leaflet-src.js",
+      "file": "leaflet.js",
+      "fileHash": "b0a1495c",
+      "needsInterop": true
+    },
+    "lucide-react": {
+      "src": "../../lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "6eeae165",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "f9750afe",
+      "needsInterop": true
+    },
+    "react-leaflet": {
+      "src": "../../react-leaflet/lib/index.js",
+      "file": "react-leaflet.js",
+      "fileHash": "b3948126",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-NXESFFTV": {
+      "file": "chunk-NXESFFTV.js"
+    },
+    "chunk-DRWLMN53": {
+      "file": "chunk-DRWLMN53.js"
+    },
+    "chunk-C3P3YZLA": {
+      "file": "chunk-C3P3YZLA.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
